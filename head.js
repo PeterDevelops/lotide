@@ -11,7 +11,6 @@ const assertEqual = function(actual, expected) {
 // An empty array should yield undefined as its head
 
 const head = function (arr) {
-  for (let i = 0; i < arr.length; i++) {
     if (arr.length === 1) {
       return arr[0];
     } else if (arr.length < 1){
@@ -19,7 +18,6 @@ const head = function (arr) {
     } else {
     return arr[0];
     }
-  }
 };
 
 assertEqual(head([5,6,7]), 5); // Pass
