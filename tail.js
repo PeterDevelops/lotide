@@ -24,3 +24,7 @@ assertEqual(result[1], "Labs"); // ensure second element is "Labs"
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words); // no need to capture the return value since we are not checking it
 assertEqual(words.length, 3); // original array should still have 3 elements!
+
+// Test Case: Array with one or zero element
+assertEqual(tail(["one"]).length, 0); // Should equal to 0
+assertEqual(tail([]).length, 0); // Should be 0
