@@ -22,13 +22,12 @@ const assertArraysEqual = function(arr1, arr2) {
 
 // Implement middle which will take in an array and return the middle-most element(s) of the given array.
 const middle = function(arr) {
-  let numArr = [];
   if (arr.length <= 2) {
     return [];
   } else if (arr.length % 2 === 0) {
-    return numArr = [arr[Math.round(arr.length / 2) - 1], arr[Math.round(arr.length / 2)]];
+    return [arr[Math.round(arr.length / 2) - 1], arr[Math.round(arr.length / 2)]];
   } else if (arr.length % 2 !== 0) {
-    return numArr = [arr[Math.round(arr.length / 2) - 1]];
+    return [arr[Math.round(arr.length / 2) - 1]];
   }
 };
 
