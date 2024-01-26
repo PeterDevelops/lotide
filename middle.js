@@ -26,9 +26,9 @@ const middle = function(arr) {
   if (arr.length <= 2) {
     return [];
   } else if (arr.length % 2 === 0) {
-    return numArr = [Math.round(arr.length / 2), (Math.round(arr.length / 2) + 1)];
-  } else if (arr.length % 3 === 0 || arr.length % 5 === 0) {
-    return numArr = [Math.round(arr.length / 2)];
+    return numArr = [arr[Math.round(arr.length / 2) - 1], arr[Math.round(arr.length / 2)]];
+  } else if (arr.length % 2 !== 0) {
+    return numArr = [arr[Math.round(arr.length / 2) - 1]];
   }
 };
 
