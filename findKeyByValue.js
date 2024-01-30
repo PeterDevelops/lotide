@@ -17,10 +17,15 @@ const bestTVShowsByGenre = {
 };
 
 const findKeyByValue = function(object, value) {
-  return object;
+  for (const key in object) {
+    if (object[key] === value) {
+      return key;
+    }
+  }
+  return undefined;
 };
-
-console.log(findKeyByValue(bestTVShowsByGenre));
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+assertEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"), "comedy");
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Notebook"), undefined);
