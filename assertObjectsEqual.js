@@ -44,5 +44,6 @@ const assertObjectsEqual = function(actual, expected) {
 };
 assertObjectsEqual({ a: '1', b: 2 }, { b: 2, a: '1' }); // Pass, objects are the same
 assertObjectsEqual({ a: '1', b: 2 }, { b: 2, a: 2 }); // Fail, objects are different value
-assertObjectsEqual({ a: 2, b: [1,2] }, { b: [1,2], a: 2 }); // Pass
-assertObjectsEqual({ a: '1', b: [1,1] }, { b: [1,2], a: 2 }); // Fail
+assertObjectsEqual({ a: 2, b: [1, 2] }, { b: [1, 2], a: 2 }); // Pass
+assertObjectsEqual({ a: 2, b: [1, 1] }, { b: [1, 2], a: 2 }); // Fail. b: has different value
+assertObjectsEqual({ a: 2, b: [1, 2, 3] }, { b: [1, 2, 3, 4], a: 2 }); // Fail. b: has longer length
