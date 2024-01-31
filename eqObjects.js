@@ -38,9 +38,9 @@ const eqObjects = function(object1, object2) {
         return false;
       }
     }
-    return true;
+    return true; // if our object passes through the loop return true
   }
-  return false;
+  return false; // if length is too long it will return false
 };
 
 // Primitive Values:
