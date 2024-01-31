@@ -35,7 +35,7 @@ const eqObjects = function(object1, object2) {
           return false;
         }
       } else {
-        return false;
+        return false; // returns false if object2[key] does not exist in object2
       }
     }
     return true; // if our object passes through the loop return true
