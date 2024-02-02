@@ -11,7 +11,6 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) { // returns a truthy value
     console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
@@ -34,7 +33,7 @@ const map = function(array, callback) {
   results.push(callback(item)); // our callback we can use to calculate any return value we want
   }
   return results;
-}
+};
 
 // Test Cases:
 assertArraysEqual(map(words, word => word.length), [6, 7, 2, 5, 3]); // returns the length of all of the array elements
