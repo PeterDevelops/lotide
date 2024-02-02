@@ -12,7 +12,6 @@ const assertEqual = function(actual, expected) {
 
 const findKey = function(object, callback) {
   for (const user in object) {
-    console.log(object[user]);
     if (callback(object[user])) { // object[user] takes the value of the properties, in this case the values are objects
       return user;
     }
