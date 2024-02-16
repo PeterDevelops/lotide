@@ -1,4 +1,4 @@
-// Implement middle which will take in an array and return the middle-most element(s) of the given array.
+
 const middle = function(arr) {
   if (arr.length <= 2) {
     return [];

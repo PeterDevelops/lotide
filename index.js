@@ -1,4 +1,3 @@
-// requires all the functions in this file
 const head   = require('./head');
 const tail   = require('./tail');
 const middle = require('./middle');
@@ -15,6 +14,7 @@ const flatten = require('./flatten');
 const letterPositions = require('./letterPositions');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
+
 
 module.exports = {
   head,
