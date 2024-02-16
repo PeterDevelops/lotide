@@ -38,6 +38,7 @@ The following functions are currently implemented:
 * `flatten(arr)`: Takes in a multi-dimentional array and returns a flatten version.
 * `head(arr)`: Takes in an array and returns the fist element of that array. 
 * `letterPositions(sentence)`: Takes in a sentence and returns all the indices (zero-based positions) in the string where each characcter is found.
+* `map(array, callback)`: A function that takes in an array and a callback and returns a new array based on the results of the callback on each item in the array.
 * `middle(arr)`: Takes in an array, and returns the middle most element(s) of an array.
 * `tail(arr)`: Takes in an array and returns a new array with every element BUT the first one.
 * `takeUntil(array, callback)`: Takes in an array and a callback, then returns an array containing only the elements in the array that appear before the one that caused the callback to return truthy.
