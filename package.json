@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@peterdinh/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "Lighthouse Labs - Lotide library",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/PeterDevelops/lotide.git"
   },
-  "author": "",
+  "author": "Peter Dinh <peterdinhbc@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/PeterDevelops/lotide/issues"
